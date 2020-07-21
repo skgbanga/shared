@@ -1,10 +1,5 @@
-#include "common.h"
+#include "static.h"
 
-#include <stdio.h>
-
-extern "C" {
-
-void call() {
-  printf("%d\n", a);
-}
+std::string dynamic_speak() {
+  return static_speak() + " I am dynamic";
 }
